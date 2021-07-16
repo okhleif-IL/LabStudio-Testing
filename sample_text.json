@@ -1,0 +1,38 @@
+{
+"data": {
+		"ner": "Now add 340ml of cold water says the person.",
+		"video": "<video src='C:/Users/okhleif/Downloads/Sample videos/changing_tire_0002.mp4'  
+			onclick=\"
+			v=document.getElementsByTagName('video')[0];
+			console.log(v);
+			oth_audio_element = document.getElementsByTagName('audio')[0];
+			audio_element = document.getElementsByTagName('audio')[1];
+			console.log(document.getElementsByTagName('audio'));
+			console.log(audio_element.currentTime, v.currentTime);
+			audio_element.currentTime = v.currentTime; 
+			oth_audio_element.currentTime = v.currentTime;
+			console.log(audio_element.currentTime, v.currentTime)
+			butts=document.getElementsByTagName('button');
+			butt_ele = '';
+			for (idx=0;idx<butts.length;idx++){
+				console.log(butts[idx]);console.log(butts[idx].className); 
+				if (butts[idx].className == 'ant-btn ant-btn-primary') {butt_ele=butts[idx]}}
+			console.log(butt_ele);
+			if(v.paused) {
+				console.log('YAAY!! Not playing. So i will play'); 
+				butt_ele.click();
+			}				
+			else {
+				console.log('YAAY!! playing. So I will pause'); 
+				butt_ele.click();
+			};
+			console.log(butts);
+			console.log('playing');
+			audio_element.currentTime = v.currentTime; 
+			oth_audio_element.currentTime = v.currentTime; 
+			console.log(audio_element.currentTime, oth_audio_element.currentTime, v.currentTime);
+			\" width=100% muted controls/>
+			",
+		"videoSource": "C:/Users/okhleif/Downloads/Sample videos/changing_tire_0002.mp4"
+		}
+}
